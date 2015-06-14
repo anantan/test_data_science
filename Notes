@@ -1,0 +1,76 @@
+Help:
+1. R-Studtio download for Linux.
+2. How to get help in R?
+    - Example to help on function rnorm do the following
+    - ?rnorm or help.search("rnorm") or args("rnorm")
+    - for help.search("rnorm") - You don't even need to get the fn name right
+    - It's like lookfor in matlab
+3. Type rnorm on the command prompt - You get the full function for it
+4. http://cran.r-project.org/doc/contrib/Short-refcard.pdf
+5. Questions about R: Try StackOverflow with the tag "[r]" - to ask an R question
+6. [data type] data analysis or [data type] R programming: data type can be machine learning or biostatistics or signal processing,...
+
+How to connect to MySQL server using R...
+Merge data...
+
+*************************************************************************
+Week 2:
+
+GIT
+
+After installing git:
+
+git config --global user.name anantan
+git config --global user.email anantan@gmail.com
+
+git config --list
+###Lists the config params
+
+2-4:
+
+1. Start repo from scratch.
+2. Fork a repo from another users repo.
+
+repo = https://github.com/anantan
+
+git init
+#Create local empty repo
+
+git remote add origin $repo/repo-name.git
+#This connects your local git to the remote git
+
+git remote -v
+#:Lists all remotes
+
+git branch
+#Lists all branches
+
+git add . #Adds all files to index
+git add -u ##Adds to index - Not new files but files that were deleted or renamed
+git add -A  ## Does both previous
+
+#After adding
+git commit -m "Message"
+git commit -a -m "Message" # Does add and commit
+
+### After commit
+git push
+
+#Once there is a remote repo:
+#You can clone it by
+git clone $repo/repo-name.git
+
+#checkout
+git checkout master
+
+or
+git checkout -b branch  ## -b option also creates the branch
+
+git checkout branch
+###Checkout existing branch
+
+git pull
+### Pull from remote repo
+**************************************************************************
+
+
