@@ -71,6 +71,8 @@ git checkout branch
 
 git pull
 ### Pull from remote repo
+git pull $repo/repo-name.git master ## This is to connect the local branch to the remote git
+
 **************************************************************************
 
 
